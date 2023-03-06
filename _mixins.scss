@@ -1,0 +1,46 @@
+@mixin maxBlockWidth() {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+@mixin part() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@mixin cards() {
+    width:385px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(16, 51, 30, 0.1);
+    border-radius: 30px;
+}
+
+@mixin card-heads($url) {
+    background: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+@mixin help ($color) {
+    margin-top: 50px;
+    width: 180px;
+    height: 70px;
+    box-shadow: 0px 10px 50px rgba(16, 51, 30, 0.5);
+    border-radius: 35px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    background-color: var(--primary-color);
+
+    &:hover {
+    background-color: var(--tertiary-color);
+    }
+}
